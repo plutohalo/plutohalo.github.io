@@ -1,0 +1,22 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jeff's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+This is an awesome website bout data sicence and elmo?
+
+Sometimes I use **Google** to search for things. Here is a link to [Google](https://www.google.com).
+
+I want to add a picture of my favorite club.
+
+![](image/rm.png)
+<img src = "image/rm.png" style = "width: 30%">
+
+If you'd like to learn more about this website, visit [this page](about.html).s

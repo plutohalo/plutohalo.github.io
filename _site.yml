@@ -1,0 +1,16 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-grav fa-lg
+      href: plot.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<plutohalo@hotmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/plutohalo/
+output:
+  html_document:
+    theme: cosmo
