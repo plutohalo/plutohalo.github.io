@@ -1,22 +1,19 @@
 ---
-title: "My awesome website"
+title: "Yifan's personal page"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# Welcome to Yifan's personal page
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](https://media1.tenor.com/m/-jUv995pm5EAAAAd/normal-day-lame.gif)
 
-This is an awesome website bout data sicence and elmo?
+This is an awesome and clean website about Yifan.
 
-Sometimes I use **Google** to search for things. Here is a link to [Google](https://www.google.com).
+I like a game called **Geoguessr**, which is a location guessing game. Here is a link to [Geoguessr](https://www.geoguessr.com/).
 
-I want to add a picture of my favorite club.
+Also, I want to add a picture of my favorite club.
 
-![](image/rm.png)
 <img src = "image/rm.png" style = "width: 30%">
-
-If you'd like to learn more about this website, visit [this page](about.html).s
