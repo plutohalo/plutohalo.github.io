@@ -6,11 +6,56 @@ output:
     toc_float: true
 ---
 
-## some plots
+## Plot 1: Scatter plot of daily temperature range and precipitation on Nov. 18 each year in New York.  
 
-```{r}
+```{r, warning=F, message=F}
 library(tidyverse)
-df = tibble(x = 1:10, y = rnorm(10))
+library(plotly)
+library(p8105.datasets)
 
-df |> ggplot(aes(x, y)) + geom_point()
+data("ny_noaa")
+
+
+ny_noaa |>
+  filter(month(date) == 11 & day(date) == 18) |>
+  mutate(tmin = as.numeric(tmin), tmax = as.numeric(tmax), temp_diff = tmax - tmin) |>
+  filter(temp_diff>=0) |>
+  mutate(text_label = str_c("Temp Max - Min.(°F): ", temp_diff, "\nPrecipitation (0.1mm):", prcp, "\nWeather station ID", id))|>
+  plot_ly(
+    x = ~temp_diff, y = ~prcp, type = "scatter", mode = "markers",
+    text = ~text_label, alpha = 0.5) |>
+  layout(title = 'Daily temperature range and precipitation on Nov. 18 each year in New York', 
+         xaxis = list(title = 'Daily temperature range(°F):'), 
+         yaxis = list(title = 'Precipitation (0.1mm)'))
+```
+
+## Plot 2: Line plot of daily temperature range in New York Weather station ID USC00305334 in 1984.  
+```{r, warning=F, message=F}
+ny_noaa |>
+  filter(year(date) == 1984 & id == "USC00305334") |>
+  mutate(tmin = as.numeric(tmin), tmax = as.numeric(tmax), temp_diff = tmax - tmin) |>
+  # mutate(text_label = str_c("Temp Max - Min.(°F): ", temp_diff))|>
+  plot_ly(x = ~date, y = ~temp_diff, type = "scatter", mode = 'lines') |>
+  layout(title = "Daily temperature range in New York Weather Station USC00305334 in 1984", 
+         xaxis = list(title = "Date"), 
+         yaxis = list(title = "Temperature range(°F)"))
+
+
+```
+
+## Plot 3: Histogram of mean precipitation in New York by month in 2002.  
+```{r, warning=F, message=F}
+
+#plot prcp mean by month
+ny_noaa |>
+  filter(year(date)==2002)|>
+  mutate(prcp = as.numeric(prcp)) |>
+  group_by(month(date)) |>
+  mutate(prcp_mean = mean(prcp, na.rm = T)) |>
+  plot_ly(x = ~month(date), y = ~prcp_mean, type = "bar") |>
+  layout(title = "Mean precipitation in New York by month 1981-2020", 
+         xaxis = list(title = "Month"), 
+         yaxis = list(title = "Mean Precipitation (0.1mm)")) 
+
+
 ```

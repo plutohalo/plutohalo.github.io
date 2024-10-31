@@ -5,33 +5,36 @@ output:
     toc: true
     toc_float: true
 ---
+Yifan Xu  
+Pronoun: he/his/him  
+Email: yx2857@cumc.columbia.edu  
 
 ## Education
-Sep. 2023 – Present 
-Columbia University New York, NY
-Mailman School of Public Health
-Doctor of Public Health in Biostatistics
+Sep. 2023 – Present  
+Columbia University New York, NY  
+Mailman School of Public Health  
+Doctor of Public Health in Biostatistics  
 
-Sep. 2017 - May 2019
-New York University (NYU) New York, NY
-College (School) of Global Public Health
-Master of Public Health in Biostatistics
+Sep. 2017 - May 2019  
+New York University (NYU) New York, NY  
+College (School) of Global Public Health  
+Master of Public Health in Biostatistics  
 
-Sep. 2012 - Jul. 2016
-Shanghai Jiao Tong University (SJTU) Shanghai, China
-School of Life Sciences and Biotechnology
-Bachelor of Engineering in Bioengineering
+Sep. 2012 - Jul. 2016  
+Shanghai Jiao Tong University (SJTU) Shanghai, China  
+School of Life Sciences and Biotechnology  
+Bachelor of Engineering in Bioengineering  
 
 ## Work Experience
-Mar. 2020 – Present
-NYU Grossman School of Medicine New York, NY
-Assistant Research Scientist
+Mar. 2020 – Present  
+NYU Grossman School of Medicine New York, NY  
+Assistant Research Scientist  
 
-Apr. 2018 – Nov. 2018
-Bain& Company Shanghai, China
-Part-time Assistant
+Apr. 2018 – Nov. 2018  
+Bain& Company Shanghai, China  
+Part-time Assistant  
 
-Mar. 2017 – Jul. 2017
-Meritco Services Shanghai, China
-Consulting Intern 
+Mar. 2017 – Jul. 2017  
+Meritco Services Shanghai, China  
+Consulting Intern  
 
