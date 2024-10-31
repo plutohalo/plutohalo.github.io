@@ -11,6 +11,8 @@ navbar:
       href: mailto:<plutohalo@hotmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/plutohalo/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/yifan-xu-5960a585
 output:
   html_document:
     theme: cosmo
